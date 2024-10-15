@@ -108,11 +108,11 @@ export default function Form() {
               </div>
               <div className="apply">
                 <label>Course Duration *</label>
-                <input id='Duration' type='text' value={Duration} required onChange={e => setDuration (e.target.value)} />
+                <input id='Duration' type='number' value={Duration} required onChange={e => setDuration (e.target.value)} />
               </div>
               <div className="apply">
                 <label>Last Year Percentage/CGPA *</label>
-                <input id='Cgpa' type='text' value={Cgpa} required onChange={e => setCgpa (e.target.value)} />
+                <input id='Cgpa' type='number' value={Cgpa} required onChange={e => setCgpa (e.target.value)} />
               </div>
 
               <button className='button' type='submit'>Save & Next</button>
